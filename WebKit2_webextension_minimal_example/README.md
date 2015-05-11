@@ -5,7 +5,7 @@ Minimal example of WebKit2 (GTK3 version) usage with web-extensions (using Vala)
 
 You must compile the Vala files, the compilation option are provided on the first line of each file.
 
-The web-extension is using Vala, but you could use other language (like C).
+The web-extension is using Vala, but you could use other languages (like C).
 
 Note: currently, it is not possible to write the web-extensions in Python, because it lacks the introspections files. Once they'll be available, it should be possible to create hte required shared library (.so file) using Cython.
 
