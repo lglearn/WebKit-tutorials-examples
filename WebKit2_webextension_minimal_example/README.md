@@ -1,15 +1,17 @@
 Minimal example of WebKit2 (GTK3 version) usage with web-extensions (using Vala).
 ---------------------------------
 
-3 files are provided: a minimal example of web-extension and 2 demos of GUI that loads web-extensions (in Vala and Python3).
+3 files are provided: a minimal example of web-extension (in Vala) and 2 demos of GUI that load web-extensions (in Vala and Python3).
 
 You must compile the Vala files, the compilation option are provided on the first line of each file.
+
+The web-extension is using Vala, but you could use other languages (like C).
+
+Note: currently, it is not possible to write the web-extensions in Python, because it lacks the introspections files. Once they'll be available, it should be possible to create hte required shared library (.so file) using Cython.
 
 When you run "webkit2_webextension_minimal_gui" or "py_webkit2_webextension_minimal_gui.py",
 they should access the generated file "webkit2_webextension_minimal_so.so"
 and run its method.
-
-Note: currently, it is not possible to write the web-extensions in Python, because it lacks the introspections files. Once they'll be available, it should be possible to create a .so using Cython.
 
 For the purpose of the example, the URL "http://www.google.com" &amp; all the request starting by "data" (usually images) are blocked.
 
