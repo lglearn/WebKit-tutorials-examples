@@ -19,7 +19,7 @@ LIB =
 LDFLAGS = `pkg-config gtk+-3.0 webkit2gtk-3.0  --libs`
 
 INC_DEBUG = $(INC)
-CFLAGS_DEBUG = $(CFLAGS) -march=athlon-fx -Wextra -Wall -g
+CFLAGS_DEBUG = $(CFLAGS) -Wextra -Wall -g
 RESINC_DEBUG = $(RESINC)
 RCFLAGS_DEBUG = $(RCFLAGS)
 LIBDIR_DEBUG = $(LIBDIR)
@@ -30,7 +30,7 @@ DEP_DEBUG =
 OUT_DEBUG = bin/Debug/gtk3_minimal
 
 INC_RELEASE = $(INC)
-CFLAGS_RELEASE = $(CFLAGS) -march=athlon-fx -O2 -Wextra
+CFLAGS_RELEASE = $(CFLAGS) -O2 -Wextra
 RESINC_RELEASE = $(RESINC)
 RCFLAGS_RELEASE = $(RCFLAGS)
 LIBDIR_RELEASE = $(LIBDIR)
