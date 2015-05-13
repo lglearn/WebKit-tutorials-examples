@@ -14,7 +14,7 @@ Then run the program (type the command ```'./bin/Release/gtk3_webkit2_web_extens
 
 The web-extension is using Vala, but you could use other languages (like C).
 
-Note: currently, it is not possible to write the web-extensions in Python, because it lacks the introspections files. Once they'll be available, it should be possible to create hte required shared library (.so file) using Cython.
+Note: currently, it is not possible to write the web-extensions in Python, because it lacks the introspections files. Once they'll be available, it should be possible to create the required shared library (.so file) using Cython.
 
 When you run "webkit2_webextension_minimal_gui" or "py_webkit2_webextension_minimal_gui.py",
 they should access the generated file "webkit2_webextension_minimal_so.so"
