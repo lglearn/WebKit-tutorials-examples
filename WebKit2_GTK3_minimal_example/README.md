@@ -9,7 +9,7 @@ The compilation options are provided on the first line of the .vala file.
 
 * Python 3
 
-run the script ```python3 py_webkit2_minimal_gui.py```
+Run the script ```python3 py_webkit2_minimal_gui.py```
 
 * C  (in the c_example directory)
 
