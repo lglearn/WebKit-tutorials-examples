@@ -7,4 +7,4 @@ WebKit tutorials, examples &amp; demos
 
 * ![Minimal demo of WebKit2 web-extensions (in Vala)] (https://github.com/lglearn/WebKit-tutorials-examples/tree/master/WebKit2_webextension_minimal_example "WebKit web-extension demo")
 
-Includes 2 examples of GUI using the extension (in Vala and Python3).
+Includes 3 examples of GUI using the extension (in Vala, Python3 & C).
