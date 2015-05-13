@@ -1,4 +1,4 @@
-Minimal example of WebKit2 (GTK3 version) usage with web-extensions (using Vala).
+Minimal example of WebKit2 (with GTK3) usage with web-extensions.
 ---------------------------------
 
 3 files are provided: a minimal example of web-extension (in Vala) and 3 demos of GUI that load web-extensions (in Vala, Python3 & C).
