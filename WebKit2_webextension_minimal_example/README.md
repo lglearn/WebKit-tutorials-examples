@@ -1,9 +1,16 @@
 Minimal example of WebKit2 (GTK3 version) usage with web-extensions (using Vala).
 ---------------------------------
 
-3 files are provided: a minimal example of web-extension (in Vala) and 2 demos of GUI that load web-extensions (in Vala and Python3).
+3 files are provided: a minimal example of web-extension (in Vala) and 3 demos of GUI that load web-extensions (in Vala, Python3 & C).
 
 You must compile the Vala files, the compilation option are provided on the first line of each file.
+
+The C example uses its own directory as it generates many files.
+
+[Using Linux, start a shell] Compile this code using the Makefile (type the command ```'make'```), ignore the warnings about unused parameters, they are normal.
+
+Copy the generated ```webkit2_webextension_minimal_so.so``` file in ```c_example```.
+Then run the program (type the command ```'./bin/Release/gtk3_webkit2_web_extensions'```).
 
 The web-extension is using Vala, but you could use other languages (like C).
 
