@@ -9,7 +9,7 @@ The C example uses its own directory as it generates many files.
 
 [Using Linux, start a shell] Compile this code using the Makefile (type the command ```'make'```), ignore the warnings about unused parameters, they are normal.
 
-Copy the generated ```webkit2_webextension_minimal_so.so``` file in ```c_example```.
+Copy the generated ```webkit2_webextension_minimal_so.so``` file in ```c_gui_example```.
 Then run the program (type the command ```'./bin/Release/gtk3_webkit2_web_extensions'```).
 
 The web-extension is using Vala, but you could use other languages (like C).
