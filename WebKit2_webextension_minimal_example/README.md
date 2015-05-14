@@ -1,7 +1,7 @@
 Minimal example of WebKit2 (with GTK3) usage with web-extensions.
 ---------------------------------
 
-5 examples are provided: 2 minimal examples of web-extension (in Vala & C) and 3 minimal examples of GUIs that load web-extensions (in Vala, Python3 & C).
+5 examples are provided: 2 minimal examples of web-extensions (in Vala & C) and 3 minimal examples of GUIs that load web-extensions (in Vala, Python3 & C).
 
 To use the examples, you must first compile the Web-Extensions. Then compile the GUI example (except for Python of course).
 You must then copy at least one of the generated Web-Extension in the directory from which you will start the GUIs (they look for the extension in the *current* directory).
