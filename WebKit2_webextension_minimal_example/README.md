@@ -52,7 +52,7 @@ they should access the generated file ```webkit2_webextension_minimal_so.so``` (
 For the purpose of the example, the URL "http://www.google.com" &amp; all the request starting by "data" (usually images) are blocked.
 
 When running the programs you should see these messages (notice the [REJECTED] strings).
-If more than one Web-Extension file (.so) is present, there will be several set of messages.
+If more than one Web-Extension file (.so) is present, there will be several sets of messages.
 
 ```
 $ ./webkit2_webextension_minimal_gui
