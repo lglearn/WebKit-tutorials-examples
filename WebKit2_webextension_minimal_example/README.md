@@ -1,10 +1,10 @@
 Minimal example of WebKit2 (with GTK3) usage with web-extensions.
 ---------------------------------
 
-5 examples are provided: 2 minimal examples of web-extension (in Vala & C) and 3 demos of GUI that load web-extensions (in Vala, Python3 & C).
+5 examples are provided: 2 minimal examples of web-extension (in Vala & C) and 3 minimal examples of GUIs that load web-extensions (in Vala, Python3 & C).
 
-To use the example, you must first compile the Web-Extensions. Then compile the GUI example (except for Python of course).
-You must then copy at least one of the generated Web-Extension in the directory from which you will start the GUIs (they look for the extension in the current directory).
+To use the examples, you must first compile the Web-Extensions. Then compile the GUI example (except for Python of course).
+You must then copy at least one of the generated Web-Extension in the directory from which you will start the GUIs (they look for the extension in the *current* directory).
 
 All the instructions suppose that you are under Linux (or equivalent) and run a shell (console).
 
@@ -20,7 +20,9 @@ You must compile the Vala file, the compilation option are provided on the first
  Check that the file ```webkit2_webextension_minimal_so.so``` has been generated.
 
 #### C Web-Extension
-To compile the C example, go in the ```c_web_extension``` directory. Compile the code using the Makefile (type the command ```'make'```), ignore the warnings about unused parameters, they are normal.
+The C example uses its own directory as it generates many files.
+
+To compile the C example, go in the ```c_web_extension``` directory. Compile the code using the Makefile (type the command ```make```), ignore the warnings about unused parameters, they are normal.
 
 Check that the file ```c_web_extension/bin/Release/webkit2_web_extension.so``` has been generated.
 
@@ -37,7 +39,7 @@ No compilation step necessary.
 #### C GUI
 The C example uses its own directory as it generates many files.
 
-To compile the C example, go in the ```c_gui_example``` directory. Compile the code using the Makefile (type the command ```'make'```), ignore the warnings about unused parameters, they are normal.
+To compile the C example, go in the ```c_gui_example``` directory. Compile the code using the Makefile (type the command ```make```), ignore the warnings about unused parameters, they are normal.
 
 Check that the file  ```bin/Release/gtk3_webkit2_web_extensions``` has been generated.
 
