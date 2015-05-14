@@ -1,28 +1,56 @@
 Minimal example of WebKit2 (with GTK3) usage with web-extensions.
 ---------------------------------
 
-3 files are provided: a minimal example of web-extension (in Vala) and 3 demos of GUI that load web-extensions (in Vala, Python3 & C).
+5 examples are provided: 2 minimal examples of web-extension (in Vala & C) and 3 demos of GUI that load web-extensions (in Vala, Python3 & C).
 
-You must compile the Vala files, the compilation option are provided on the first line of each file.
+To use the example, you must first compile the Web-Extensions. Then compile the GUI example (except for Python of course).
+You must then copy at least one of the generated Web-Extension in the directory from which you will start the GUIs (they look for the extension in the current directory).
 
-The C example uses its own directory as it generates many files.
+All the instructions suppose that you are under Linux (or equivalent) and run a shell (console).
 
-[Using Linux, start a shell] Compile this code using the Makefile (type the command ```'make'```), ignore the warnings about unused parameters, they are normal.
-
-Copy the generated ```webkit2_webextension_minimal_so.so``` file in ```c_gui_example```.
-Then run the program (type the command ```'./bin/Release/gtk3_webkit2_web_extensions'```).
-
-The web-extension is using Vala, but you could use other languages (like C).
+## WebKit2 Web-Extensions examples
+ 
+2 web-extension examples are provided: in Vala, and C (```c_web_extension``` directory).
 
 Note: currently, it is not possible to write the web-extensions in Python, because it lacks the introspections files. Once they'll be available, it should be possible to create the required shared library (.so file) using Cython.
 
-When you run "webkit2_webextension_minimal_gui" or "py_webkit2_webextension_minimal_gui.py",
-they should access the generated file "webkit2_webextension_minimal_so.so"
-and run its method.
+#### Vala Web-Extension
+You must compile the Vala file, the compilation option are provided on the first line of the file.
+
+ Check that the file ```webkit2_webextension_minimal_so.so``` has been generated.
+
+#### C Web-Extension
+To compile the C example, go in the ```c_web_extension``` directory. Compile the code using the Makefile (type the command ```'make'```), ignore the warnings about unused parameters, they are normal.
+
+Check that the file ```c_web_extension/bin/Release/webkit2_web_extension.so``` has been generated.
+
+You can now copy it in the directory where the GUIs are located.
+
+## GUI examples using the Web-extensions
+
+#### Vala GUI
+You must compile the Vala file, the compilation option are provided on the first line of the file.
+
+#### Python GUI
+No compilation step necessary.
+
+#### C GUI
+The C example uses its own directory as it generates many files.
+
+To compile the C example, go in the ```c_gui_example``` directory. Compile the code using the Makefile (type the command ```'make'```), ignore the warnings about unused parameters, they are normal.
+
+Check that the file  ```bin/Release/gtk3_webkit2_web_extensions``` has been generated.
+
+
+## Testing
+
+When you run ```./webkit2_webextension_minimal_gui``` or ```python3 py_webkit2_webextension_minimal_gui.py```, or ```c_gui_example/bin/Release/gtk3_webkit2_web_extensions```
+they should access the generated file ```webkit2_webextension_minimal_so.so``` (and ```webkit2_web_extension.so``` if you copied it) and run its method.
 
 For the purpose of the example, the URL "http://www.google.com" &amp; all the request starting by "data" (usually images) are blocked.
 
-When running the programs you should see these messages (notice the [REJECTED] strings):
+When running the programs you should see these messages (notice the [REJECTED] strings).
+If more than one Web-Extension file (.so) is present, there will be several set of messages.
 
 ```
 $ ./webkit2_webextension_minimal_gui
